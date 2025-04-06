@@ -1,0 +1,146 @@
+/* Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  /* min body height */
+  min-height: 100vh; /* could cause problems */
+}
+
+/* Set shorter line heights on headings 
+  and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+ion-icon {
+  display: block;
+}
+
+ion-icon {
+  pointer-events: none;
+}
+
+/* Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* Remove list styles */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Remove blockquote defaults */
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* Remove table defaults */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+:focus-visible {
+  outline-offset: 4px;
+}
+
+::selection {
+  background-color: var(--clr-neutral-100);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove all animations and transitions for people 
+  that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

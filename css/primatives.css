@@ -1,0 +1,238 @@
+/* ************************ */
+/* THE STACK */
+/* ************************ */
+.l-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* only necessary if CSS reset does not remove margins, or margins have been added to elements */
+.l-stack * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* for large spacing */
+.stack-large > * + * {
+  margin-top: var(--rem-space-3);
+}
+
+/* for small spacing */
+.stack-small > * + * {
+  margin-top: var(--rem-space-025);
+}
+
+.l-stack > * + * {
+  /* remove > for recursive */
+  margin-top: var(--rem-space-1); /* arbitrary value */
+}
+
+/* when the stack has only one child */
+.l-stack:only-child {
+  height: 100%;
+}
+
+/* to split the stack */
+.l-stack > :nth-child(3) {
+  margin-bottom: auto;
+}
+
+/* ************************ */
+/* THE BOX */
+/* ************************ */
+.l-box {
+  padding: var(--rem-space-1); /* arbitrary value */
+  border: 1px solid; /* do not have to use variable */
+  color: var(--clr-neutral-900); /* use whatever variable name you have */
+  background-color: var(
+    --clr-neutral-100
+  ); /* use whatever variable name you have */
+}
+
+/* to support inversion for dark/light modes */
+.l-box * {
+  color: inherit;
+}
+
+.l-box--invert {
+  /* OR .box.invert */
+  /* ↓ Dark becomes light, and light becomes dark */
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-neutral-900);
+}
+
+/* ************************ */
+/* THE CENTRE */
+/* ************************ */
+.l-center {
+  max-width: 60ch; /* arbitrary value */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.l-center--intrinsic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ************************ */
+/* THE CLUSTER */
+/* ************************ */
+.l-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rem-space-3); /* arbitrary value */
+}
+
+.l-cluster--inline {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.l-cluster--block {
+  justify-content: flex-start;
+}
+
+/* ************************ */
+/* THE SIDEBAR */
+/* ************************ */
+.l-with-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rem-space-3); /* arbitrary value */
+}
+
+.l-sidebar {
+  /* ↓ The width when the sidebar _is_ a sidebar */
+  flex-basis: 20rem; /* arbitrary value */
+  flex-grow: 1;
+}
+
+.l-not-sidebar {
+  /* ↓ Grow from nothing */
+  flex-basis: 0;
+  flex-grow: 999;
+  /* ↓ Wrap when the elements are of equal width */
+  min-width: 50%; /* arbitrary value */
+}
+
+/* ************************ */
+/* THE SWITCHER */
+/* ************************ */
+.l-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rem-space-075); /* arbitrary value */
+  --threshold: 30rem; /* arbitrary value */
+}
+
+.l-switcher > * {
+  flex-grow: 1;
+  flex-basis: calc((var(--threshold) - 100%) * 999);
+}
+
+/* Change the proportion of an element */
+.l-switcher > :nth-child(2) {
+  flex-grow: 2; /* arbitrary value */
+}
+
+/* ************************ */
+/* THE COVER */
+/* ************************ */
+.l-cover {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: var(--rem-space-075); /* arbitrary value */
+}
+
+.l-cover > * {
+  margin-top: var(--rem-space-075); /* arbitrary value */
+  margin-bottom: var(--rem-space-075); /* arbitrary value */
+}
+
+/* Use the next two rulesets if you have other content like a header or footer that you want to fit in the viewport height */
+.l-cover > :first-child:not(h1) {
+  margin-top: 0;
+}
+
+.l-cover > :last-child:not(h1) {
+  margin-bottom: 0;
+}
+
+/* h1 is arbitrary, use any element that you want centered */
+.l-cover > h1 {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* ************************ */
+/* THE GRID */
+/* ************************ */
+.l-grid {
+  display: grid;
+  gap: var(--rem-space-3); /* arbitrary value */
+}
+
+.l-grid-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--rem-space-3);
+}
+
+@media (max-width: 768px) {
+  .l-grid-two {
+    grid-template-columns: 1fr;
+  }
+}
+
+@supports (width: min(250px, 100%)) {
+  /* arbitrary value for min */
+  .l-grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(min(250px, 100%), 1fr)
+    ); /* arbitrary value for min */
+  }
+}
+
+/* ************************ */
+/* THE FRAME */
+/* ************************ */
+.l-frame {
+  aspect-ratio: 16 / 9; /* arbitrary value */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.l-frame > img,
+.l-frame > video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ************************ */
+/* THE IMPOSTER */
+/* ************************ */
+.l-imposter {
+  position: absolute;
+  top: 50%; /* arbitrary value, 50% for centering */
+  left: 50%; /* arbitrary value, 50% for centering */
+  transform: translate(-50%, -50%);
+}
+
+.l-imposter.contain {
+  --margin: 0px; /* arbitrary value for this local variable */
+  overflow: auto;
+  max-width: calc(100% - (var(--margin) * 2));
+  max-height: calc(100% - (var(--margin) * 2));
+}
+
+.l-center--content {
+  max-width: clamp(200px, 80%, 1024px);
+}

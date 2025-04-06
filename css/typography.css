@@ -1,0 +1,150 @@
+/* text style  */
+
+h1,
+.h1 {
+  font-family: var(--font-family-secondary);
+  font-size: var(--fs-xxx-large);
+  line-height: var(--line-height-05);
+  font-weight: var(--fw-black);
+}
+
+h2,
+.h2 {
+  font-family: var(--ff-serif);
+  font-size: var(--fs-xx-large);
+}
+
+h3,
+.h3 {
+  font-family: var(--ff-serif);
+  font-size: var(--fs-x-large);
+}
+
+h4,
+.h4 {
+  font-family: var(--ff-serif);
+  font-size: var(--fs-large);
+}
+
+h5,
+.h5 {
+  font-family: var(--ff-serif);
+  font-size: var(--fs-medium);
+}
+
+h6,
+.h6 {
+  font-family: var(--ff-serif);
+  font-size: var(--fs-regular);
+}
+
+p {
+  font-family: var(--ff-serif);
+  font-size: var(--fs-regular);
+
+  max-width: 60ch;
+}
+
+/* font weight  */
+
+.u-fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.u-fw-heavy {
+  font-weight: var(--fw-heavy);
+}
+
+/* Font size */
+
+.u-fs-x-small {
+  font-size: var(--fs-x-small);
+}
+
+.u-fs-small {
+  font-size: var(--fs-small);
+}
+
+.u-fs-regular {
+  font-size: var(--fs-regular);
+}
+
+.u-fs-x-medium {
+  font-size: var(--fs-x-medium);
+}
+
+.u-fs-medium {
+  font-size: var(--fs-medium);
+}
+
+.u-fs-large {
+  font-size: var(--fs-large);
+}
+
+.u-fs-x-large {
+  font-size: var(--fs-x-large);
+}
+
+.u-fs-xx-large {
+  font-size: var(--fs-xx-large);
+}
+
+.u-fs-xxx-large {
+  font-size: var(--fs-xxx-large);
+}
+
+/* font style  */
+
+.u-fstyle-italic {
+  font-style: var(--fstyle-italic);
+}
+.u-fstyle-uppercase {
+  font-style: var(--fstyle-uppercase);
+}
+
+/* text align */
+
+.c-text-align__center {
+  text-align: center;
+}
+/* form  */
+.c-form {
+  font-family: var(--ff-serif);
+}
+
+.c-form__label {
+  font-size: var(--fs-regular);
+  color: var(--clr-primary-400);
+  font-style: var(--fstyle-bold);
+}
+
+.c-form__input,
+.c-form__textarea {
+  padding: var(--rem-space-1);
+  margin-bottom: var(--rem-space-2);
+  margin-top: var(--rem-space-075);
+  border: 1px solid var(--clr-neutral-500);
+  background-color: var(--clr-neutral-100);
+}
+
+.c-form__legend {
+  text-transform: var(--fstyle-uppercase);
+  line-height: var(--line-height-1);
+  letter-spacing: var(--letter-spacing-1);
+  margin-bottom: var(--rem-space-05);
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-medium);
+  color: var(--clr-primary-300);
+}
+
+.c-form__fieldset {
+  border: none;
+  margin-top: var(--rem-space-1);
+}
+
+.c-form {
+  background-color: var(--clr-primary-40);
+  border: 1px solid var(--clr-secondary-100);
+  color: var(--clr-neutral-500);
+  font-family: var(--ff-sans-serif);
+}
