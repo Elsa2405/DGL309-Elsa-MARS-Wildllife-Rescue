@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax Scrolling</title>
+    <link rel="icon" type="image/x-icon" href="/images/Icons/Logo Icons/Icon - Zoomed In Single Crow.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <style>
+    .c-h3 {
+      font-size: 120px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .parallax-1 {
+      background: url(images/baby-bird.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .parallax-inner {
+      padding: 10% 0;
+    }
+
+    .c-h4 {
+      font-size: 32px;
+      color: var(--clr-neutral-900);
+
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin: 3rem 0 2rem;
+    }
+
+    .l-with-sidebar {
+      align-items: center;
+    }
+
+    .l-center--content {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .parallax-2 {
+      background: url(images/fawn.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .parallax-3 {
+      background: url(images/seal-pup.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .parallax-4 {
+      background: url(images/bat.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .parallax-nestling {
+      background: url(images/nestlings.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .parallax-fledgling {
+      background: url(images/fledgelings.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .parallax-brancher {
+      background: url(images/Baby-Barred-Owls.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .parallax-hero {
+      background: url(images/Property/Deer/1200px-800px-Deer.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      padding: 10% 0;
+    }
+
+    .mobile-header {
+      position: absolute;
+    }
+    
+  </style>
+  <body>
+    <section>
+
+      <header class="mobile-header">
+          
+        <a href="/index.html" class="logo l-pl-4"><img src="images/Mars-Logo-Horizontal-white.svg" alt="" height="60"
+          /></a>
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+        <label for="menu-toggle" class="menu-btn">☰</label>
+        <label for="menu-toggle" class="overlay"></label>
+        
+        <nav class="navbar">
+          <label for="menu-toggle" class="close-btn">✖</label>
+          <ul class="navbar-list">
+            <li class="dropdown">
+              <input type="checkbox" id="dropdown-toggle-1" hidden />
+              <label for="dropdown-toggle-1" class="dropdown-btn">
+                About Us <i class="fa-solid fa-chevron-down"></i>
+              </label>
+              <ul class="dropdown-menu">
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="our-team.html">Our Team</a></li>
+                <li><a href="news.html">News</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <input type="checkbox" id="dropdown-toggle-2" hidden />
+              <label for="dropdown-toggle-2" class="dropdown-btn navbar-list-active">
+                Wildlife Hospital <i class="fa-solid fa-chevron-down"></i>
+              </label>
+              <ul class="dropdown-menu">
+                <li><a href="emergency-information.html">Emergency Information</a></li>
+                <li><a href="about-the-hospital.html">About The Hospital</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <input type="checkbox" id="dropdown-toggle-3" hidden />
+              <label for="dropdown-toggle-3" class="dropdown-btn">
+                Visitor Centre <i class="fa-solid fa-chevron-down"></i>
+              </label>
+              <ul class="dropdown-menu">
+                <li><a href="visit-us.html">Visit Us</a></li>
+                <li><a href="gift-shop.html">Gift Shop</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="ambassador-bird-visits.html">Ambassador Bird Visits</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <input type="checkbox" id="dropdown-toggle-4" hidden />
+              <label for="dropdown-toggle-4" class="dropdown-btn">
+                Support Us <i class="fa-solid fa-chevron-down"></i>
+              </label>
+              <ul class="dropdown-menu">
+                <li><a href="get-involved.html">Get Involved</a></li>
+                <li><a href="donate-funds.html">Donate Funds</a></li>
+                <li><a href="donate-goods.html">Donate Goods</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <input type="checkbox" id="dropdown-toggle-5" hidden />
+              <label for="dropdown-toggle-5" class="dropdown-btn">
+                Resources <i class="fa-solid fa-chevron-down"></i>
+              </label>
+              <ul class="dropdown-menu">
+                <li><a href="birds.html">Birds</a></li>
+                <li><a href="native-plants.html">Native Plants</a></li>
+                <li><a href="tool-library.html">Tool Library</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+              </ul>
+            </li>
+            <li class="header-action">
+              <button class="btn btn-primary" onclick="window.location.href='https://www.canadahelps.org/en/dn/10210'">
+                <span>Donation</span>
+                <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+  <main>
+    <div class="l-wrapper__100 l-pb-025">
+      <section class="parallax-hero">
+        <div class="parallax-inner">
+          <h3 class="c-h3">Emergency Information</h3>
+        </div>
+      </section>
+        <div class="l-pb-2-5">
+    <section class="l-wrapper__90 l-center">
+      <h2 class="c-text-align__center l-center l-pt-5 l-pb-2">Found an animal in distress?</h2>
+      <p class="c-text-align__center l-center l-mt-3"><strong>Don’t Touch: Wait, Watch, Call!</strong></p>
+      <p class="l-mt-3 l-center">
+        For most people, helping wildlife in distress is a natural reaction.
+        Indeed, if you see an animal that appears sick, injured, or orphaned,
+        intervention may be necessary.
+      </p>
+      <p class="l-mt-2 l-center"><strong>Before attempting a rescue, please call the MARS helpline at
+        <span>(250) 337-2021</span></strong>
+        
+      </p>
+      <p class="l-mt-2 l-mb-5 l-center">
+        MARS wildlife rehabilitators will assess the situation and determine
+        the best course of action. Our qualified staff and volunteers tend to
+        600 wildlife emergencies each year so they are very experienced and
+        happy to help you.
+      </p>
+    </section>
+    <section class="parallax-hero">
+      <div class="parallax-inner">
+          <h2 class="c-h3">Capturing and Containing Wildlife</h2>
+        </div>
+    </section>
+        <div class="l-wrapper__90 l-center--content">
+        <div class="l-grid-two ">
+        <p class="l-mt-3">
+          If a rescue is necessary, injured wild birds can be rounded up and
+          captured using a towel, blanket, or piece of clothing. Place the
+          towel over the bird, covering their head, and gently scoop them up.
+        </p>
+        <p class="l-mt-2">
+          Mammals and birds of prey, such as owls and eagles, can be very
+          dangerous to handle without prior training and experience, so please
+          call MARS before you put the animal or yourself at risk.
+        </p>
+        <p class="l-mt-2">
+          If you have captured an animal, handle them as little as possible.
+          Even if they appear calm, cuddling and human contact is extremely
+          stressful to wildlife and may even kill them. Put the animal in a
+          cardboard box or other container with air holes and keep them in a
+          warm, dark, quiet place, away from children and pets. Never give
+          wildlife food or water unless instructed by a wildlife
+          rehabilitator.
+        </p>
+        <p class="l-mt-2">
+          The MARS Wildlife Hospital is open 7 days a week. It is tremendously
+          helpful if you can transport the animal to us, but if that isn’t
+          possible please call to arrange for a volunteer to pick it up. The
+          less time it takes for the animal to get here, the better its
+          chances of successful rehabilitation! Remember it is illegal to keep
+          wildlife in your possession for more than 24 hours.
+        </p>
+      </div>
+    </div>
+      </div>
+    
+    <div class="l-wrapper__90 l-mt-3 l-center--content l-mobile--emergency">
+    <section class="">
+      
+        <h3 class="l-mb-3">If you’ve found a …</h3>
+        <div class="">
+          <button class="accordion ">BABY BIRD</button>
+          <section class="panel">
+            <div class="l-with-sidebar">
+            <div class="l-sidebar">
+              <img
+              class="l-mt-3"
+             src="images/baby-bird.jpg"
+             srcset="images/baby-bird.jpg 2x"
+             alt="portrait"
+           /></div>
+        
+             
+           
+            <div class="l-not-sidebar l-center">
+            <h4 class="l-mt-3 ">BABY BIRD</h4>
+            
+              <p class="l-mt-2">
+                Many young birds found during the spring and summer months are in
+                the process of “fledging” or leaving the nest and it’s normal for
+                them to be on the ground for several days before they learn how to
+                fly. Usually the fledgling’s parents are nearby and will return
+                periodically to feed and protect their young. Unfortunately, many of
+                these happy healthy fledglings are “kidnapped” by well-meaning
+                members of the public who think they are injured!
+              </p>
+              <p class="l-mt-2"><strong>The best mother for a baby bird is its own mother, so before you
+                intervene:</strong>
+                
+              </p>
+              <ul class="l-mt-2">
+                <li class="c-card__list-item-check">Observe the bird from a distance</li>
+                <li class="c-card__list-item-check">Keep curious children and pets away</li>
+                <li class="c-card__list-item-check">Watch and listen for the parents</li>
+                <li class="c-card__list-item-check">
+                  Determine if the baby is a nestling or fledgling (see descriptions
+                  below)
+                </li>
+                <li class="c-card__list-item-check">Look for signs of injury, such as blood or a drooping wing</li>
+                <li class="c-card__list-item-check">Look for signs of illness, such as crusty eyes or beak</li>
+                <li class="c-card__list-item-check">
+                  Look for signs that the bird is orphaned, such as fly eggs on the
+                  feathers
+                </li>
+                <li class="c-card__list-item-check">Phone MARS to speak to a wildlife rehabilitator</li>
+              </ul>
+            </div>
+            
+           
+          </div>
+            <section class="l-mt-5">
+              <h5 class="c-card__list-item-question-mark">IS IT A NESTLING, FLEDGLING OR A BRANCHER?</h5>
+              <div class="l-grid">
+                <article class="card l-mt-2 l-mb-2">
+                  <div class="card-image-container">
+                  <img
+                    src="images/nestlings.jpg"
+                    srcset="images/nestlings.jpg 2x"
+                    alt="square"
+                  />
+                  </div>
+                  <div class="card-content">
+                  <h5 class="l-pt-075 l-pb-1">Nestings</h5>
+                  <div class="hidden-content">
+                  <p>
+                    Nestlings are baby birds that have recently hatched and are not
+                    yet ready to leave the nest. They are blind and naked or covered
+                    with short pinfeathers and some fluff. Nestlings are unable to
+                    stand up, hop, or perch. They are totally vulnerable and rely on
+                    mom and dad for food and warmth. If you find a healthy nestling
+                    on the ground, try to locate the nest nearby. If the nest is
+                    intact, you can put the nestling back. It is a myth that bird
+                    parents will abandon their babies if a human has handled them!
+                    Make sure to put them back in the right nest — check for other
+                    siblings of the same age and species. Then watch from a distance
+                    to make sure that the parents return within 2 hours.
+                  </p>
+                  <h6 class="c-card__list-item-idea">Nestling FAQ</h6>
+                  <ul>
+                    <li class="c-card__list-item-bird">
+                      Blind and naked, or have short pinfeathers and some fluff
+                    </li>
+                    <li class="c-card__list-item-bird">Unable to stand up, hop, or perch</li>
+                    <li class="c-card__list-item-bird">Rely on parents for food and warmth</li>
+                    <li class="c-card__list-item-bird">Being on the ground is abnormal – must be in the nest</li>
+                  </ul>
+                  </div>
+                  <button class="learn-more" data-name="Nestings">
+                    Learn more about Nestings
+                  </button>
+                  </div>
+                </article>
+    
+                <article class="card l-mt-2 l-mb-2">
+                  <div class="card-image-container">
+                  <img
+                    src="images/fledgelings.jpg"
+                    srcset="images/fledgelings.jpg 2x"
+                    alt="square"
+                  />
+                  </div>
+                  <div class="card-content">
+                    <h5 class="l-pt-075 l-pb-1 ">
+                      <ul>
+                        <li class="c-card__list-item-fledgling">Fledglings</li>
+                      </ul>
+                       </h5>
+                    <div class="hidden-content">
+                  <p>
+                    Fledglings are baby birds that have developed enough that they
+                    are ready to leave the nest but cannot fly. They are almost
+                    fully feathered, but the tail and wing feathers are too short
+                    for flight. Fledglings are able to stand up and hop and are
+                    learning to perch. They are much more independent than nestlings
+                    but still rely on mom and dad for food. If you find a healthy
+                    fledgeling on the ground, you can move it a short distance to a
+                    safer location, but otherwise please leave them alone. Being on
+                    the ground is a natural event – it doesn’t matter how many times
+                    you put fledglings back in the nest, they will jump back out.
+                    This is an important stage in their development, during which
+                    the parents will teach them how to find food and recognize
+                    predators. Watch from a distance to make sure that the parents
+                    return within 2 hours.
+                  </p>
+                  <h6 class="c-card__list-item-idea">FLEDGLING FAQ</h6>
+                  <ul>
+                    <li class="c-card__list-item-bird">
+                      Almost fully feathered, but tail and wings too short for
+                      flight
+                    </li>
+                    <li class="c-card__list-item-bird">Able to stand up, hop, learning to perch</li>
+                    <li class="c-card__list-item-bird">
+                      More independent than nestlings, but still rely on parents for
+                      food
+                    </li>
+                    <li class="c-card__list-item-bird">Being on the ground is normal – learning to fly</li>
+                  </ul>
+                    </div>
+                    <button class="learn-more" data-name="Fledglings">
+                      Learn more about Fledglings
+                    </button>
+                  </div>
+                </article>
+                <article class="card l-mt-2 l-mb-2">
+                  <div class="card-image-container">
+                  <img
+                    src="images/Baby-Barred-Owls.jpg"
+                    srcset="images/Baby-Barred-Owls.jpg 2x"
+                    alt="square"
+                  />
+                </div>
+                <div class="card-content">
+                  <h5 class="l-pt-075 l-pb-1">Branchers</h5>
+                  <div class="hidden-content">
+                  <p>
+                    Brancher is another term for a fledgling. Owl and other raptor
+                    fledglings are often called branchers because rather than
+                    jumping to the ground after leaving the nest, they will perch on
+                    a branch nearby. Like fledglings, they are still unable to fly
+                    so can be mistaken for a bird in distress.
+                  </p>
+                  <h6 class="c-card__list-item-idea">BRANCHER FAQ</h6>
+                  <ul>
+                    <li class="c-card__list-item-bird">
+                      Fledglings that perch on or near the nest, rather than hopping
+                      on the ground
+                    </li>
+                    <li class="c-card__list-item-bird">Still learning to fly</li>
+                    <li class="c-card__list-item-bird">Often owl/raptor species</li>
+                  </ul>
+                  </div>
+                  <button class="learn-more" data-name="Branchers">
+                    Learn more about Branchers
+                  </button>
+                </div>
+                </article>
+              
+              </div>
+            </section>
+          
+          
+            
+        </section>
+          
+          
+        <button class="accordion">FAWN</button>
+       
+    
+        <section class="panel">
+          <div class="l-with-sidebar">
+            <div class="l-sidebar">
+              <img
+              class="l-mt-3"
+             src="images/fawn.jpg"
+             srcset="images/fawn.jpg 2x"
+             alt="portrait"
+           />
+            </div>
+            
+  <div class="l-not-sidebar">
+    <h4 class="l-mt-3">FAWN</h4>
+    <p class="l-mt-2">
+      Do not assume that a lone fawn is abandoned. When the mother deer is
+      off foraging for food, she often leaves her young behind, sometimes
+      for several hours. The fawn knows to stay still and quiet and does
+      not have a scent so is difficult for predators to locate by smell.
+      Please never touch a fawn with your bare hands – this transfers your
+      scent and makes it easy for predators to find.
+    </p>
+    <p class="l-mt-2"> <strong>
+      The best mother for a fawn is its own mother, so before you
+      intervene:</strong>
+    </p >
+    <ul class="l-mt-2 l-mb-3">
+      <li class="c-card__list-item-check">Observe the fawn from a distance</li>
+      <li class="c-card__list-item-check">Keep curious children and pets away</li>
+      <li class="c-card__list-item-check">Watch and listen for the mom</li>
+      <li class="c-card__list-item-check">Look for signs of injury, such as blood or broken bones</li>
+      <li class="c-card__list-item-check">
+        Look for signs of illness, such as discharge from the eyes or
+        nares
+      </li>
+      <li class="c-card__list-item-check">
+        Look for signs that the fawn is orphaned, such as soiled fur or
+        fleas
+      </li>
+      <li class="c-card__list-item-check">Phone MARS to speak to a wildlife rehabilitator</li>
+    </ul>
+  </div>
+          </div>
+         
+       
+        </section>
+
+        <button class="accordion">SEAL PUP</button>
+        <section class="panel l-with-sidebar">
+          <div class="l-with-sidebar">
+            <div class="l-sidebar">
+              <img
+              class="l-mt-3"
+             src="images/seal-pup.jpg"
+             srcset="images/seal-pup.jpg 2x"
+             alt="portrait"
+           />
+            </div>
+            
+  <div class="l-not-sidebar">
+    <h4 class="l-mt-3">SEAL PUP</h4>
+    <p class="l-mt-2">
+      Do not assume a lone seal pup is abandoned. Pups are often left
+      alone on or near the beach while their mother hunts. Pups can bite
+      so please do not attempt to touch them! Your presence may also
+      frighten the adult seals and cause them to abandon their young.
+    </p>
+    <p class="l-mt-2"><strong>The best mother for a seal pup is its own mother, so before you
+      intervene:</strong>
+      
+    </p>
+    <ul class="l-mt-2 l-mb-3">
+      <li class="c-card__list-item-check">Observe the pup from a distance</li>
+      <li class="c-card__list-item-check">Keep curious children and pets away</li>
+      <li class="c-card__list-item-check">Watch and listen for the mom</li>
+      <li class="c-card__list-item-check">Look for signs of injury, such as blood or broken bones</li>
+      <li class="c-card__list-item-check">Look for signs of illness, such as laboured breathing</li>
+      <li class="c-card__list-item-check">
+        Look for signs that the pup is orphaned, such as a thin body or
+        constant vocalizations
+      </li>
+      <li class="c-card__list-item-check">
+        Look for signs that the pup is orphaned, such as a thin body or
+        constant vocalizations
+      </li>
+    </ul>
+          </div>
+          
+</div>
+       
+        </section>
+
+        <button class="accordion">BAT</button>
+
+        <section class="panel">
+          <div class="l-with-sidebar">
+            <div class="l-sidebar">
+              <img
+              class="l-mt-3"
+             src="images/bat.jpg"
+             srcset="images/bat.jpg 2x"
+             alt="portrait"
+           />
+            </div>
+
+            <div class="l-not-sidebar">
+              <h4 class="l-mt-3">BAT</h4>
+              <p class="l-mt-2">
+                Do not assume that all bats carry rabies. While bats are a rabies
+                vector species, meaning that they have the ability to carry rabies
+                and spread it, the CDC has determined that only 0.5% of the entire
+                bat population of BC is a carrier of the virus. Bats are nocturnal,
+                and will often find odd places to roost during the day or over
+                winter during hibernation,often on sides of buildings, inside patio
+                umbrellas, or even inside wood piles.
+                <ul class="l-mt-2 l-mb-3">
+                  <li class="c-card__list-item-x">DO NOT TOUCH!</li>
+                  <li class="c-card__list-item-check">Keep children and pets away from the bat at all times</li>
+                  <li class="c-card__list-item-check">
+                    Watch for signs of injury such as broken bones or tears in the wing
+                    membrane
+                  </li>
+                  <li class="c-card__list-item-check">
+                    If the injured bat is on the ground, place a container or box
+                    overtop of the bat to prevent it from leaving the area
+                  </li>
+                  <li class="c-card__list-item-check">Phone MARS to speak to a wildlife rehabilitator</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          
+
+      
+          
+        </section>
+        </div>
+     
+      
+    </section>
+        </div>
+
+      <!-- baby bird  -->
+      <section class="parallax-1">
+        <div class="parallax-inner">
+          <h3 class="c-h3">If you’ve found a …</h3>
+        </div>
+      </section>
+      <div class="l-center--content">
+        <section class="l-with-sidebar">
+          <div class="l-sidebar">
+            <img
+              src="images/Illustrations/Found_A_Bird_Illustration.svg"
+              alt="bird"
+            />
+          </div>
+          <div class="l-not-sidebar">
+            <h4 class="c-h4">BABY BIRD</h4>
+            <p class="l-mt-2">
+              Many young birds found during the spring and summer months are in
+              the process of “fledging” or leaving the nest and it’s normal for
+              them to be on the ground for several days before they learn how to
+              fly. Usually the fledgling’s parents are nearby and will return
+              periodically to feed and protect their young. Unfortunately, many
+              of these happy healthy fledglings are “kidnapped” by well-meaning
+              members of the public who think they are injured!
+            </p>
+            <p class="l-mt-2">
+              <strong
+                >The best mother for a baby bird is its own mother, so before
+                you intervene:</strong
+              >
+            </p>
+            <ul class="l-mt-2">
+              <li class="c-card__list-item-check">
+                Observe the bird from a distance
+              </li>
+              <li class="c-card__list-item-check">
+                Keep curious children and pets away
+              </li>
+              <li class="c-card__list-item-check">
+                Watch and listen for the parents
+              </li>
+              <li class="c-card__list-item-check">
+                Determine if the baby is a nestling or fledgling (see
+                descriptions below)
+              </li>
+              <li class="c-card__list-item-check">
+                Look for signs of injury, such as blood or a drooping wing
+              </li>
+              <li class="c-card__list-item-check">
+                Look for signs of illness, such as crusty eyes or beak
+              </li>
+              <li class="c-card__list-item-check">
+                Look for signs that the bird is orphaned, such as fly eggs on
+                the feathers
+              </li>
+              <li class="c-card__list-item-check">
+                Phone MARS to speak to a wildlife rehabilitator
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="l-mb-5 l-mt-3">
+          <h5 class="c-card__list-item-question-mark">
+            IS IT A NESTLING, FLEDGLING OR A BRANCHER?
+          </h5>
+
+
+        </section>
+      </div>
+
+        <!-- NESTLING  -->
+        <section class="parallax-nestling">
+          <div class="parallax-inner">
+            <h3 class="c-h3">IS IT A NESTLING?</h3>
+          </div>
+        </section>
+        <div class="l-center--content">
+          <section class="l-with-sidebar">
+            <div class="l-sidebar">
+              <img
+                src="images/Illustrations/Layer_Files/Birds/Found_A_Bird_Illustration_Nestling.svg"
+                alt="bird"
+              />
+            </div>
+            <div class="l-not-sidebar">
+              <h4 class="c-h4">NESTLING</h4>
+              <p class="l-mb-3">
+                Nestlings are baby birds that have recently hatched and are not
+                yet ready to leave the nest. They are blind and naked or covered
+                with short pinfeathers and some fluff. Nestlings are unable to
+                stand up, hop, or perch. They are totally vulnerable and rely on
+                mom and dad for food and warmth. If you find a healthy nestling
+                on the ground, try to locate the nest nearby. If the nest is
+                intact, you can put the nestling back. It is a myth that bird
+                parents will abandon their babies if a human has handled them!
+                Make sure to put them back in the right nest — check for other
+                siblings of the same age and species. Then watch from a distance
+                to make sure that the parents return within 2 hours.
+              </p>
+              <h6 class="c-card__list-item-idea">Nestling FAQ</h6>
+              <ul class="l-mb-5">
+                <li class="c-card__list-item-bird">
+                  Blind and naked, or have short pinfeathers and some fluff
+                </li>
+                <li class="c-card__list-item-bird">Unable to stand up, hop, or perch</li>
+                <li class="c-card__list-item-bird">Rely on parents for food and warmth</li>
+                <li class="c-card__list-item-bird">Being on the ground is abnormal – must be in the nest</li>
+              </ul>
+            </div>
+          </section>
+
+          
+
+          
+         
+        </div>
+
+        <!-- FLEDGLING -->
+        <section class="parallax-fledgling">
+          <div class="parallax-inner">
+            <h3 class="c-h3">IS IT A FLEDGLING?</h3>
+          </div>
+        </section>
+        <div class="l-center--content">
+          <section class="l-with-sidebar">
+            <div class="l-sidebar">
+              <img
+                src="images/Illustrations/Layer_Files/Birds/Found_A_Bird_Illustration_Fledgling.svg"
+                alt="bird"
+              />
+            </div>
+            <div class="l-not-sidebar">
+              <h4 class="c-h4">
+                <ul>
+                  <li class="c-card__list-item-fledgling">Fledglings</li>
+                </ul>
+                 </h4>
+              <p class="l-mb-3">
+                Fledglings are baby birds that have developed enough that they
+                are ready to leave the nest but cannot fly. They are almost
+                fully feathered, but the tail and wing feathers are too short
+                for flight. Fledglings are able to stand up and hop and are
+                learning to perch. They are much more independent than nestlings
+                but still rely on mom and dad for food. If you find a healthy
+                fledgeling on the ground, you can move it a short distance to a
+                safer location, but otherwise please leave them alone. Being on
+                the ground is a natural event – it doesn’t matter how many times
+                you put fledglings back in the nest, they will jump back out.
+                This is an important stage in their development, during which
+                the parents will teach them how to find food and recognize
+                predators. Watch from a distance to make sure that the parents
+                return within 2 hours.
+              </p>
+              <h6 class="c-card__list-item-idea">FLEDGLING FAQ</h6>
+              <ul class="l-mb-5">
+                <li class="c-card__list-item-bird">
+                  Almost fully feathered, but tail and wings too short for
+                  flight
+                </li>
+                <li class="c-card__list-item-bird">Able to stand up, hop, learning to perch</li>
+                <li class="c-card__list-item-bird">
+                  More independent than nestlings, but still rely on parents for
+                  food
+                </li>
+                <li class="c-card__list-item-bird">Being on the ground is normal – learning to fly</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+          
+
+          <!-- BRANCHER -->
+
+          <section class="parallax-brancher">
+            <div class="parallax-inner">
+              <h3 class="c-h3">IS IT A BRANCHER?</h3>
+            </div>
+          </section>
+          <
+            
+                
+  
+            <div class="l-center--content">
+              <section class="l-with-sidebar">
+                <div class="l-sidebar">
+                  <img
+                    src="images/Illustrations/Layer_Files/Birds/Found_A_Bird_Illustration_Fledgling.svg"
+                    alt="bird"
+                  />
+                </div>
+                <div class="l-not-sidebar">
+                  <h4 class="c-h4">BRANCHERS</h4>
+                  <p class="l-mb-3">
+                    Brancher is another term for a fledgling. Owl and other raptor
+                    fledglings are often called branchers because rather than
+                    jumping to the ground after leaving the nest, they will perch on
+                    a branch nearby. Like fledglings, they are still unable to fly
+                    so can be mistaken for a bird in distress.
+                  </p>
+                  <h6 class="c-card__list-item-idea">BRANCHER FAQ</h6>
+                  <ul class="l-mb-5">
+                    <li class="c-card__list-item-bird">
+                      Fledglings that perch on or near the nest, rather than hopping
+                      on the ground
+                    </li>
+                    <li class="c-card__list-item-bird">Still learning to fly</li>
+                    <li class="c-card__list-item-bird">Often owl/raptor species</li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          
+           
+     
+      
+      <!-- fawn  -->
+      <section class="parallax-2">
+        <div class="parallax-inner">
+          <h3 class="c-h3">If you’ve found a …</h3>
+        </div>
+      </section>
+      <div class="l-center--content">
+        <section class="l-with-sidebar">
+          <div class="l-sidebar">
+            <img
+              src="images/Illustrations/Found_A_Fawn_Illustration.svg"
+              alt="bird"
+            />
+          </div>
+          <div class="l-not-sidebar">
+            <h4 class="c-h4">FAWN</h4>
+            <p class="l-mt-2">
+              Do not assume that a lone fawn is abandoned. When the mother deer
+              is off foraging for food, she often leaves her young behind,
+              sometimes for several hours. The fawn knows to stay still and
+              quiet and does not have a scent so is difficult for predators to
+              locate by smell. Please never touch a fawn with your bare hands –
+              this transfers your scent and makes it easy for predators to find.
+            </p>
+            <p class="l-mt-2">
+              <strong>
+                The best mother for a fawn is its own mother, so before you
+                intervene:</strong
+              >
+            </p>
+            <ul class="l-mt-2 l-mb-3">
+              <li class="c-card__list-item-check">
+                Observe the fawn from a distance
+              </li>
+              <li class="c-card__list-item-check">
+                Keep curious children and pets away
+              </li>
+              <li class="c-card__list-item-check">
+                Watch and listen for the mom
+              </li>
+              <li class="c-card__list-item-check">
+                Look for signs of injury, such as blood or broken bones
+              </li>
+              <li class="c-card__list-item-check">
+                Look for signs of illness, such as discharge from the eyes or
+                nares
+              </li>
+              <li class="c-card__list-item-check">
+                Look for signs that the fawn is orphaned, such as soiled fur or
+                fleas
+              </li>
+              <li class="c-card__list-item-check">
+                Phone MARS to speak to a wildlife rehabilitator
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <!-- SEAL PUP -->
+      <section class="parallax-3">
+        <div class="parallax-inner">
+          <h3 class="c-h3">If you’ve found a …</h3>
+        </div>
+      </section>
+      <div class="l-center--content">
+        <section class="l-with-sidebar">
+          <div class="l-sidebar">
+            <img
+              src="images/Illustrations/Found_A_Seal_Illustration.svg"
+              alt="bird"
+            />
+          </div>
+          <div class="l-not-sidebar">
+            <h4 class="c-h4">SEAL PUP</h4>
+            <p class="l-mt-2">
+              Do not assume a lone seal pup is abandoned. Pups are often left
+              alone on or near the beach while their mother hunts. Pups can bite
+              so please do not attempt to touch them! Your presence may also
+              frighten the adult seals and cause them to abandon their young.
+            </p>
+            <p class="l-mt-2">
+              <strong
+                >The best mother for a seal pup is its own mother, so before you
+                intervene:</strong
+              >
+            </p>
+            <ul class="l-mt-2 l-mb-3">
+              <li class="c-card__list-item-check">
+                Observe the pup from a distance
+              </li>
+              <li class="c-card__list-item-check">
+                Keep curious children and pets away
+              </li>
+              <li class="c-card__list-item-check">
+                Watch and listen for the mom
+              </li>
+              <li class="c-card__list-item-check">
+                Look for signs of injury, such as blood or broken bones
+              </li>
+              <li class="c-card__list-item-check">
+                Look for signs of illness, such as laboured breathing
+              </li>
+              <li class="c-card__list-item-check">
+                Look for signs that the pup is orphaned, such as a thin body or
+                constant vocalizations
+              </li>
+              <li class="c-card__list-item-check">
+                Look for signs that the pup is orphaned, such as a thin body or
+                constant vocalizations
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <!-- bat -->
+      <section class="parallax-4">
+        <div class="parallax-inner">
+          <h3 class="c-h3">If you’ve found a …</h3>
+        </div>
+      </section>
+      <div class="l-center--content">
+        <section class="l-with-sidebar">
+          <div class="l-sidebar">
+            <img
+              src="images/Illustrations/Found_A_Bat_Illustration.svg"
+              alt="bird"
+            />
+          </div>
+          <div class="l-not-sidebar">
+            <h4 class="c-h4">BAT</h4>
+            <p class="l-mt-2">
+              Do not assume that all bats carry rabies. While bats are a rabies
+              vector species, meaning that they have the ability to carry rabies
+              and spread it, the CDC has determined that only 0.5% of the entire
+              bat population of BC is a carrier of the virus. Bats are nocturnal,
+              and will often find odd places to roost during the day or over
+              winter during hibernation,often on sides of buildings, inside patio
+              umbrellas, or even inside wood piles.
+              <ul class="l-mt-2 l-mb-3">
+                <li class="c-card__list-item-x">DO NOT TOUCH!</li>
+                <li class="c-card__list-item-check">Keep children and pets away from the bat at all times</li>
+                <li class="c-card__list-item-check">
+                  Watch for signs of injury such as broken bones or tears in the wing
+                  membrane
+                </li>
+                <li class="c-card__list-item-check">
+                  If the injured bat is on the ground, place a container or box
+                  overtop of the bat to prevent it from leaving the area
+                </li>
+                <li class="c-card__list-item-check">Phone MARS to speak to a wildlife rehabilitator</li>
+              </ul>
+            </p>
+          </div>
+        </section>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>

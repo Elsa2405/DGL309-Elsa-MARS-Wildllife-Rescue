@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MARS | Tool Library</title>
+    <link rel="icon" type="image/x-icon" href="/images/Icons/Logo Icons/Icon - Zoomed In Single Crow.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <header>
+      <!-- notification bar -->
+      <!-- <div class="l-wrapper__100 u-bg-neutral-200">
+        <div class="l-wrapper__90 l-pb-025">
+          <p>Found orphaned, ill, or injured wildlife? Call 250-337-2021</p>
+          <address>1331 Williams Beach Road Merville, BC</address>
+        </div>
+      </div> -->
+      <!-- nav bar -->
+      <div class="l-wrapper__100">
+        <header class="mobile-header">
+          
+          <a href="/index.html" class="logo l-pl-4"><img src="images/Mars-Logo-Horizontal-white.svg" alt="" height="60"
+            /></a>
+          <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+          <label for="menu-toggle" class="menu-btn">☰</label>
+          <label for="menu-toggle" class="overlay"></label>
+          
+          <nav class="navbar">
+            <label for="menu-toggle" class="close-btn">✖</label>
+            <ul class="navbar-list">
+              <li class="dropdown">
+                <input type="checkbox" id="dropdown-toggle-1" hidden />
+                <label for="dropdown-toggle-1" class="dropdown-btn">
+                  About Us <i class="fa-solid fa-chevron-down"></i>
+                </label>
+                <ul class="dropdown-menu">
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="our-team.html">Our Team</a></li>
+                  <li><a href="news.html">News</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <input type="checkbox" id="dropdown-toggle-2" hidden />
+                <label for="dropdown-toggle-2" class="dropdown-btn">
+                  Wildlife Hospital <i class="fa-solid fa-chevron-down"></i>
+                </label>
+                <ul class="dropdown-menu">
+                  <li><a href="emergency-information.html">Emergency Information</a></li>
+                  <li><a href="about-the-hospital.html">About The Hospital</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <input type="checkbox" id="dropdown-toggle-3" hidden />
+                <label for="dropdown-toggle-3" class="dropdown-btn">
+                  Visitor Centre <i class="fa-solid fa-chevron-down"></i>
+                </label>
+                <ul class="dropdown-menu">
+                  <li><a href="visit-us.html">Visit Us</a></li>
+                  <li><a href="gift-shop.html">Gift Shop</a></li>
+                  <li><a href="tours.html">Tours</a></li>
+                  <li><a href="ambassador-bird-visits.html">Ambassador Bird Visits</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <input type="checkbox" id="dropdown-toggle-4" hidden />
+                <label for="dropdown-toggle-4" class="dropdown-btn">
+                  Support Us <i class="fa-solid fa-chevron-down"></i>
+                </label>
+                <ul class="dropdown-menu">
+                  <li><a href="get-involved.html">Get Involved</a></li>
+                  <li><a href="donate-funds.html">Donate Funds</a></li>
+                  <li><a href="donate-goods.html">Donate Goods</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <input type="checkbox" id="dropdown-toggle-5" hidden />
+                <label for="dropdown-toggle-5" class="dropdown-btn navbar-list-active">
+                  Resources <i class="fa-solid fa-chevron-down"></i>
+                </label>
+                <ul class="dropdown-menu">
+                  <li><a href="birds.html">Birds</a></li>
+                  <li><a href="native-plants.html">Native Plants</a></li>
+                  <li><a href="tool-library.html">Tool Library</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+              </li>
+              <li class="header-action">
+                <button class="btn btn-primary" onclick="window.location.href='https://www.canadahelps.org/en/dn/10210'">
+                  <span>Donation</span>
+                  <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </header>
+    <main>
+      <div class="l-wrapper__100 l-pb-025">
+        <div class="u-bg-neutral-900">
+          <div class="">
+            <div class="hero">
+              <div class="wrapper-center-content container">
+              <h1 class="c-text-align__center l-pt-3 l-pb-2">
+                <img
+                  src="./images/subtitle-img-white.png"
+                  width="32"
+                  height="7"
+                  alt="Wavy line"
+                />
+                <span class="u-text-neutral-200 u-fw-heavy">Tool Library</span>
+                <img
+                  src="./images/subtitle-img-white.png"
+                  width="32"
+                  height="7"
+                  alt="Wavy line"
+                />
+              </h1></div></div></div></div>
+              <div class="u-bg-neutral-200 l-wrapper__100 ">
+                <section class="l-pt-5 l-pb-3 l-wrapper__90 l-center">
+                  <h2 class=" c-text-align__center l-pt-2 l-pb-2">Invasive Plant Removal Tool Lending Library</h2>
+        <p>
+          Our lending library was made possible by a generous grant from the
+          Comox Valley Community Foundation. Why is it important to remove and
+          replace aggressive non-native plants? Invasives such blackberries,
+          broom, holly, and ivy outcompete native plant species, decreasing
+          habitat and biodiversity of native flora and fauna. Local stewardship
+          groups, including the team at MARS, put time and energy into removing
+          invasive plants and replacing them with native species.
+        </p>
+      </section>
+              </div>
+
+              <section class="l-pt-5 l-pb-3 l-wrapper__90 l-center--content">
+                <h2 class=" c-text-align__center l-pt-2 l-pb-2">Tool Inventory</h2>
+                <div class="l-grid">
+                  <article class="card l-mt-2 l-mb-2">
+                    <div class="card-image-container"><img
+                      src="images/Extractigator-Classic.jpg"
+                      srcset="images/Extractigator-Classic.jpg 2x"
+                      alt="logo"
+                    /></div>
+                    <div class="card-content">
+                    <h3>Extratigator Classic with BigFoot plate</h3>
+                    <div class="hidden-content">
+                    <p >
+                      <span class="c-card__list-item-tool"><strong>Total weight</strong>: ~14 lbs</span><br />
+                      <span class="c-card__list-item-tool"><strong>Height</strong>: 48″</span><br />
+                      <span class="c-card__list-item-tool"><strong>Jaw capacity</strong>: 2″</span><br />
+                      <span class="c-card__list-item-tool"
+                        ><strong>Minimum pull ratio</strong>: 12:1 (eg. apply 10 lbs to
+                        end of handle, and 120 lbs of pulling force is applied to
+                        plant)</span
+                      ><br />
+                      <span class="c-card__list-item-tool"><strong>Quantity available</strong>: 4</span><br />
+                    </p>
+                    <p>
+                      This tool will remove most woody-stemmed plants from paper thin up
+                      to 2” in diameter. The BigFoot increases the platform foot print and
+                      leverage while resisting sinking into soil and adding stability.
+                      Great for sandy, rocky, or super-soft soil conditions.
+                    </p>
+                    <p>
+                      Convenient features: automatic opening clog-free jaws, comfortable
+                      foam grip, ratcheting design.
+                    </p>
+                  </div>
+                  <button class="learn-more" data-name="Extratigator Classic">
+                    Learn more about Extratigator Classic
+                  </button>
+                </div>
+                  </article>
+                  <article class="card l-mt-2 l-mb-2">
+                    <div class="card-image-container"><img
+                      src="images/Extractigator-Junior.jpg"
+                      srcset="images/Extractigator-Junior.jpg 2x"
+                      alt="logo"
+                    /></div>
+                    <div class="card-content">
+                    <h3>Extratigator Junior with BigFoot plate</h3><div class="hidden-content">
+                    <p>
+                      <span class="c-card__list-item-tool"><strong>Total weight</strong>: ~11 lbs</span><br />
+                      <span  class="c-card__list-item-tool"><strong>Height</strong>: 36.5″</span><br />
+                      <span class="c-card__list-item-tool"><strong>Jaw capacity</strong>: 1.5″</span><br />
+                      <span class="c-card__list-item-tool"
+                        ><strong>Minimum pull ratio</strong>: 9:1 (eg. apply 10 lbs to end
+                        of handle, and 90 lbs of pulling force is applied to plant)</span
+                      ><br />
+                      <span class="c-card__list-item-tool"><strong>Quantity available</strong>: 3</span><br />
+                    </p>
+          
+                    <p>
+                      The Junior shares the same profile as the Classic but is made from
+                      thinner material with a shorter handle. The jaws of the Junior open
+                      from a complete close to 1.5” and is recommended for plants under 1”
+                      in diameter. Comes with the BigFoot plate.
+                    </p>
+                    <p>
+                      Convenient features: automatic opening clog free jaws, lightweight,
+                      comfortable foam grip, ratcheting design.
+                    </p>
+                  </div>
+                  <button class="learn-more" data-name="Extratigator Junior">
+                    Learn more about Extratigator Junior
+                  </button>
+                </div>
+                  </article>
+                  <article class="card l-mt-2 l-mb-2">
+                    <div class="card-image-container"><img
+                      src="images/Root-Slayer.png"
+                      srcset="images/Root-Slayer.png 2x"
+                      alt="logo"
+                    /></div>
+                    <div class="card-content">
+                    <h3>Root Slayer Shovel</h3>
+                    <div class="hidden-content">
+                    <p>
+                      <span class="c-card__list-item-tool"><strong>Total weight</strong>: ~6 lbs</span><br />
+                      <span class="c-card__list-item-tool"><strong>Height</strong>: 44.5″</span><br />
+                      <span class="c-card__list-item-tool"><strong>Blade</strong>: 13″</span><br />
+          
+                      <span class="c-card__list-item-tool"><strong>Quantity available</strong>: 2</span><br />
+                    </p>
+          
+                    <p>
+                      A multi-purpose shovel that is a compliment for the Extratigator.
+                      Think of it as a shovel, root hatchet, and root saw all in one tool.
+                      Helpful for blackberries, holly, and other deep rooted invaders.
+                    </p>
+                  </div>
+                  <button class="learn-more" data-name="Root Slayer Shovel">
+                    Learn more about Root Slayer Shovel
+                  </button>
+                  </div>
+                  </article>
+                  <article class="card l-mt-2 l-mb-2">
+                    <div class="card-image-container"><img
+                      src="images/Fiscars-D-Handled-Shovel.png"
+                      srcset="images/Fiscars-D-Handled-Shovel.png 2x"
+                      alt="logo"
+                    /></div>
+                    <div class="card-content">
+                    <h3>D-Handled Shovel</h3>
+                    <div class="hidden-content">
+                    <p>
+                      <span class="c-card__list-item-tool"><strong>Total weight</strong>: 3.5lbs</span><br />
+                      <span class="c-card__list-item-tool"><strong>Height</strong>: 46″</span><br />
+                      <span class="c-card__list-item-tool"
+                        ><strong>Blade</strong>: 6″ wide tapering to 4.5″, 15″ tall</span
+                      ><br />
+          
+                      <span class="c-card__list-item-tool"><strong>Quantity available</strong>: 3</span><br />
+                    </p>
+          
+                    <p>
+                      Ergonomic handle, sharp blade, wide step plate make this a great
+                      tool for cutting down and around and through roots. Light weight,
+                      easy to handle, yet strong.
+                    </p>
+                    </div><button class="learn-more" data-name="D-Handled Shovel">
+                      Learn more about D-Handled Shovel
+                    </button>
+                    </div></article>
+                  <article class="card l-mt-2 l-mb-2">
+                    <div class="card-image-container">
+                    <img
+                    src="images/PXL_20230221_005226373-Large.jpg"
+                    srcset="images/PXL_20230221_005226373-Large.jpg 2x"
+                    alt="logo"
+                  /></div>
+                    <div class="card-content">
+                    <h3>Fiscars PowerGear Super Pruner/Loppers</h3>
+                    <div class="hidden-content">
+                    <p>
+                      <span class="c-card__list-item-tool"><strong>Weight</strong>: 9 lbs</span><br />
+                      <span class="c-card__list-item-tool"><strong>Length</strong>: 15″</span><br />
+                      <span class="c-card__list-item-tool"><strong>Blade type:</strong>: Bypass</span><br />
+                      <span class="c-card__list-item-tool"
+                        ><strong>Maximum cutting capacity</strong>: 1-1/4″ diameter
+                        branches.</span
+                      ><br />
+                      <span class="c-card__list-item-tool"><strong>Quantity available</strong>: 2</span><br />
+                    </p>
+          
+                    <p>
+                      Smaller and lighter than other loppers, reducing strain on your
+                      hands, wrists and muscles. Gears multiply leverage.
+                    </p>
+                    </div><button class="learn-more" data-name="Fiscars PowerGear Super Pruner/Loppers">
+                      Learn more about Fiscars PowerGear Super Pruner/Loppers
+                    </button>
+                    </div></article>
+                  <article class="card l-mt-2 l-mb-2">
+                    <div class="card-image-container"><img
+                      src="images/PXL_20230221_005249533-Large-1.jpg"
+                      srcset="images/PXL_20230221_005249533-Large-1.jpg 2x"
+                      alt="logo"
+                    /></div>
+                    <div class="card-content">
+                    <h3>Fiscars Control Bypass Loppers</h3>
+                    <div class="hidden-content">
+                    <p>
+                      <span class="c-card__list-item-tool"><strong>Weight</strong>: 1.8 lbs</span><br />
+                      <span class="c-card__list-item-tool"><strong>Length</strong>: 24″</span><br />
+                      <span class="c-card__list-item-tool"><strong>Blade type:</strong>: Bypass</span><br />
+                      <span class="c-card__list-item-tool"
+                        ><strong>Maximum cutting capacity</strong>: 1-1/2″ diameter
+                        branches</span
+                      ><br />
+                      <span class="c-card__list-item-tool"><strong>Quantity available</strong>: 3</span><br />
+                    </p>
+          
+                    <p>
+                      Designed for smooth, easy cuts. Lightweight, shorter handles makes
+                      it easy to maneuver when cutting at tough angles. Shock-absorbing
+                      bumpers help eliminate the jarring. Secure, comfortable grip.
+                    </p>
+                    </div><button class="learn-more" data-name="Fiscars Control Bypass Loppers">
+                      Learn more about Fiscars Control Bypass Loppers
+                    </button>
+                    </div>
+                  </article>
+                  <article class="card l-mt-2 l-mb-2">
+                    <div class="card-image-container"><img
+                      src="images/PXL_20230221_005334821-Large.jpg"
+                      srcset="images/PXL_20230221_005334821-Large.jpg 2x"
+                      alt="logo"
+                    /></div>
+                    <div class="card-content">
+                    <h3>Stihl Folding Pruning Saw</h3>
+                    <div class="hidden-content">
+                    <p>
+                      <span class="c-card__list-item-tool"><strong>Weight</strong>: 6 oz</span><br />
+                      <span class="c-card__list-item-tool"><strong>Length</strong>: 12″ open; 6″ blade</span><br />
+                      <span class="c-card__list-item-tool"><strong>Blade type:</strong>: 3-sided Japan teeth</span><br />
+                      <span class="c-card__list-item-tool"><strong>Handle</strong>: rubber grip</span><br />
+                      <span class="c-card__list-item-tool"
+                        ><strong>Maximum cutting capacity</strong>: 6″ diameter
+                        branches</span
+                      ><br />
+                      <span class="c-card__list-item-tool"><strong>Quantity available</strong>: 3</span><br />
+                    </p>
+          
+                    <p>
+                      Compact folding saw with a curved chrome-plated Japanese steel blade
+                      for cutting woody shrubs and trees. Cuts on the pull stroke.
+                      Lightweight, compact & comfortable.
+                    </p>
+                    </div><button class="learn-more" data-name="Stihl Folding Pruning Saw">
+                      Learn more about Stihl Folding Pruning Saw
+                    </button>
+                    </div>
+                  </article>
+                  <article class="card l-mt-2 l-mb-2">
+                    <div class="card-image-container"><img
+                      src="images/PXL_20230221_005440616-Large.jpg"
+                      srcset="images/PXL_20230221_005440616-Large.jpg 2x"
+                      alt="logo"
+                    /></div>
+                    <div class="card-content">
+                    <h3>Heavy-duty Gloves</h3>
+                    <div class="hidden-content">
+                    <p>
+                      <span class="c-card__list-item-tool"><strong>Size</strong>: Medium, large.</span><br />
+                      <span class="c-card__list-item-tool"> Leather resists punctures by thorns.</span><br />
+          
+                      <span class="c-card__list-item-tool"><strong>Quantity available</strong>: 5 pairs</span><br />
+                    </p>
+                    </div><button class="learn-more" data-name="Heavy-duty Gloves">
+                      Learn more about Heavy-duty Gloves
+                    </button></div></article>
+                  <article class="card l-mt-2 l-mb-2">
+                    <div class="card-image-container"><img
+                      src="images/PXL_20230221_010309658-Large.jpg"
+                      srcset="images/PXL_20230221_010309658-Large.jpg 2x"
+                      alt="logo"
+                    /></div>
+                    <div class="card-content">
+                    <h3>Heavy-duty Tarps</h3>
+                    <div class="hidden-content">
+                    <p>
+                      <span class="c-card__list-item-tool"><strong>Size</strong>: 8′ x 10′</span><br />
+                      <span class="c-card__list-item-tool"> Useful for hauling cut invasives out for disposal.</span
+                      ><br />
+          
+                      <span class="c-card__list-item-tool"><strong>Quantity available</strong>: 3</span><br />
+                    </p></div><button class="learn-more" data-name="Heavy-duty Tarps">
+                      Learn more about Heavy-duty Tarps
+                    </button></div>
+                  </article>
+                  <article class="card l-mt-2 l-mb-2">
+                    <div class="card-image-container"><img
+                      src="images/PXL_20230221_010012666-Large.jpg"
+                      srcset="images/PXL_20230221_010012666-Large.jpg 2x"
+                      alt="logo"
+                    /></div>
+                    <div class="card-content">
+                    <h3>Collapsible Reusable Yard Waste Bags</h3>
+                    <div class="hidden-content">
+                    <p>
+                      <span class="c-card__list-item-tool"><strong>Volume</strong>: 72 gallons</span><br />
+                      <span class="c-card__list-item-tool"><strong>Height</strong>: 30″</span><br />
+                      <span class="c-card__list-item-tool"><strong>Diameter</strong>: 26″</span><br />
+                      <span class="c-card__list-item-tool"><strong>Carrying capacity</strong>: 150 lbs</span><br />
+                      <span class="c-card__list-item-tool"
+                        ><strong>Maximum cutting capacity</strong>: 6″ diameter
+                        branches</span
+                      ><br />
+                      <span class="c-card__list-item-tool"><strong>Quantity available</strong>: 3</span><br />
+                    </p>
+          
+                    <p>
+                      Made of UV stabilized, tear-resistant, and water repellent fabric.
+                      Handles make it easy to carry to carry invasives from an area.
+                    </p>
+                    </div><button class="learn-more" data-name="Collapsible Reusable Yard Waste Bags">
+                      Learn more about Collapsible Reusable Yard Waste Bags
+                    </button>
+                    </div>
+                  </article>
+                </div>
+        
+       
+        <section class="l-pt-5 l-pb-3 l-with-sidebar ">
+          <h2 class=" c-text-align__center l-pt-2 l-pb-2 l-sidebar">Borrowing Tools</h2>
+          <div class="l-not-sidebar ">
+            <p>
+              This tool lending library is for the benefit of community members
+              engaged in habitat stewardship in the Comox Valley and Campbell
+              River. While we do not charge for tool borrowing, donations to MARS
+              Wildlife Rescue are gratefully accepted.
+            </p>
+            <p>
+              If you have questions about the invasives removal tool lending
+              library, please email
+              <span
+                ><a class="link" href="#">habitatstewardship@marswildliferescue.com</a></span
+              >
+            </p>
+            <button class="btn l-mt-3 l-wrapper" onclick="window.location.href='form-borrow-tools.html';" type="button">Request a Tool</button>
+          </div>
+          
+        </section>
+      </section>
+    </main>
+    <footer class="l-grid container">
+      <article class="l-pb-3 l-pl-3 l-pr-3 footer-hospital">
+        <h2 class="u-fs-medium">Wildlife Hospital</h2>
+        <ul>
+          <li>Intake Hours</li>
+          <li>Daily 9:00 - 5:00</li>
+          <li>(250) 337-2021</li>
+        </ul>
+      </article>
+
+      <article class="l-pb-3 l-pl-3 l-pr-3 footer-visitor-center">
+        <h2 class="u-fs-medium">Visitor Centre</h2>
+        <ul>
+          <li>Open</li>
+          <li>Friday - Saturday</li>
+          <li>10:00 - 3:00</li>
+          <li>(778) 428-1990</li>
+        </ul>
+      </article>
+
+      <article class="l-pb-3 l-pl-3 l-pr-3 footer-location">
+        <h2 class="u-fs-medium">Location</h2>
+        <ul>
+          <li><address>1331 Williams Beach Road,</address></li>
+          <li>Merville, BC</li>
+        </ul>
+         
+      </article>
+      <article class="social-media l-pb-3 l-pl-3 l-pr-3">
+        <span><i class="fa-brands fa-facebook"></i></span>
+        <span><i class="fa-brands fa-youtube"></i></span>
+        <span><i class="fa-brands fa-instagram"></i></span>
+      </article>
+    </footer>
+  </body>
+</html>
